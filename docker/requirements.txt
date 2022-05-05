@@ -4,6 +4,7 @@ jupyterlab
 jupyterlab-vim
 h5py
 matplotlib
+monai
 mypy
 nibabel
 neurite
