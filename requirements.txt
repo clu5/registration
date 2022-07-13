@@ -8,7 +8,7 @@ matplotlib
 monai
 mypy
 nibabel
-neurite
+neurite==0.2
 numpy
 pandas
 pillow
