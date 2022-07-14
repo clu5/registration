@@ -1,6 +1,6 @@
 datasets/*
+experiments/*
 figures/*
-voxelmorph/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -14,14 +14,13 @@ clean:
 		rm -r experiments/debug ; \
 	fi
 	
-experiment: experiments
-	mkdir experiments/debug
+debug:
 	python registration/main.py --output experiments/debug --debug ; 
 
-experiment-%: experiments
-	mkdir experiments/$*
-	if [-z "$(DEBUG)"]; then \
-		python registration/main.py --output experiments/$* --debug ; \
-	else \
-		python registration/main.py --output experiments/$* ; \
-	fi
+experiment-%:
+	python registration/main.py --output experiments/$* ;
+#if [ -z "$(DEBUG)" ]; then \
+#		python registration/main.py --output experiments/$* --debug ; \
+#	else \
+#		python registration/main.py --output experiments/$* ; \
+#	fi
